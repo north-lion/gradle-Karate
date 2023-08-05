@@ -12,17 +12,6 @@ public class demoRunner {
 
     @Karate.Test
     Karate testFeature() {
-        /** If you want Parallel Test, use below code
-         * Ref: https://note.com/shift_tech/n/n2588d2826f60
-         *
-         Results results = Runner.path("classpath:grpc/demo.feature").parallel(1);
-         assertEquals(0, results.getFailCount(), results.getErrorMessages());
-         */
-
-        /** Test All in Package
-         Karate run() { return Karate.run().relativeTo(getClass());
-         */
-
         /** Single Feature Test */
         return Karate.run("classpath:aws/lambda/demo.feature");
     }
