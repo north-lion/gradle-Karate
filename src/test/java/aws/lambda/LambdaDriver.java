@@ -31,7 +31,7 @@ public class LambdaDriver {
         return engine.logger;
     }
 
-    // the logging will appear in the html report for grpc.feature
+    // the logging will appear in the html report for lambda.feature
     public static String invoke(String functionName, String payload) {
         Logger logger = logger();
         logger.debug("aws lambda call start");
